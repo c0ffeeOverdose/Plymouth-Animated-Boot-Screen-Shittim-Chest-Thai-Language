@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=shittim-chest
+Description=Blue Archive Simp
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/shittim-chest/animation
+ScriptFile=/usr/share/plymouth/themes/shittim-chest/animated-boot.script

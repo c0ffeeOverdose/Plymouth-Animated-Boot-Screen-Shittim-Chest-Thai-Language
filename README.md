@@ -1,6 +1,7 @@
-# Animated Boot Screen Shell Script
+# Shittim Chest Animated Boot Screen Shell Script
 
-This is a template built off of Eonix's animated cat plymouth theme. I just wrote some scripts to make it easier to make your own. 
+This is a shittim chest themes?
+nah I just want share The theme I'm using
 
 
 ## Instructions 
@@ -18,51 +19,27 @@ cd /usr/share/plymouth/themes
 3. Create new theme folder
 
 `
-sudo mkdir ./{{ThemeNameHere}}
+sudo mkdir ./shittim-chest
 `
 
 4. Move into your new theme folder.
 
 `
-cd {{ThemeNameHere}}
+cd shittim-chest
 `
 
 3. Clone this repo contents into the folder.
 
 `
-sudo git clone https://github.com/thedonquixotic/Plymouth-Animated-Boot-Screen-Creator.git .
+sudo git clone https://github.com/c0ffeeOverdose/Plymouth-Animated-Boot-Screen-Shittim-Chest-Thai-Language.git .
 `
 The dot at the end will clone the contents of the template folder into your new theme folder. 
 
-### Customization
-
-1. Put mp4 or gif into the "input" folder. 
-2. Run the correct .sh file for the file type you are using. 
-3. Transfer the image sequence to the root of the project folder.
-4. Open up template.script and change the lines:
-```
-for (i = 0; i < {{NUMBER OF IMAGES IN SEQUENCE}}; i++)
-  flyingman_image[i] = Image("progress-" + i + ".png");
-flyingman_sprite = Sprite();
-```
-and 
-```
-flyingman_sprite.SetImage(flyingman_image[Math.Int(progress / 3) % {{NUMBER OF IMAGES}}]);
-```
-To have the correct number of images in the sequence. 
-
-5. Resave the template.script file as "animated-boot.script". 
-6. Open up template.plymouth and enter in your name, descriptions, and new script paths etc and save as {{ThemeNameHere}}.plymouth
-
 ### Installation
-1. Install the theme using this script, be sure to replace the template variables used:
+1. Install the theme using this script:
 
 ```
- sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/{{ThemeName}}/{{ThemeName}}.plymouth 100
-```
-In my case it looks like this:
-```
-sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/slash/slash.plymouth 100
+ sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/shittim-chest/shittim-chest.plymouth 100
 ```
 
 2. Select the default theme.
@@ -101,19 +78,4 @@ systemctl disable gdm.service
 
 `
 systemctl enable gdm-plymouth.service
-`
-
-
-
-
-### Credits
-Original repo by Eionix: https://github.com/krishnan793/PlymouthTheme-Cat/commits?author=krishnan793
-
-[![Video](https://4.bp.blogspot.com/-gG0MBGjEE9M/WBYXrOGrVGI/AAAAAAAABVE/auGpLRYf7jor4hu3jurYGcjaVBapHyAVACLcB/s320/8998adc40112985a8f29cf414925d390.gif)](https://www.youtube.com/watch?v=c6f478VBhtE)
-
-
-[Video] https://www.youtube.com/watch?v=c6f478VBhtE
-
-[Blog] http://eionix.blogspot.in/2016/10/plymouth-theme-for-ubuntu.html
-
-And if you want to check out my blog for more creative coding and unix customization stuff, check out https://www.jackalope.tech/blog
+` 
